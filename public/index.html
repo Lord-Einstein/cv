@@ -1,15 +1,373 @@
-<!doctype html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="print.css" media="print">
-    <title>TP WEB :: Mon CV</title>
-</head>
-<body>
-    <main>
-        
-    </main>
-</body>
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!--=============== REMIXICONS ===============-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+      
+      <title>ADJIWANOU Darill - Portfolio</title>
+      <link rel="shortcut icon" href="./assets/img/logo2.png" type="image/x-icon">
+
+      <!-- <link rel="stylesheet" href="./assets/css/styles.css"> -->
+      <link rel="stylesheet" href="./assets/css/print.css" media="print">
+   </head>
+   <body>
+      <header class="header" id="header">
+         <nav class="nav container">
+            <a href="#" class="nav__logo name"><img src="./assets/img/logo2.png" alt=""></a>
+
+            <div class="nav__menu" id="nav-menu">
+               <ul class="nav__list">
+                  <li>
+                     <a href="#home" class="nav__link active-link">Acceuil.</a>
+                  </li>
+                  <li>
+                     <a href="#work" class="nav__link">Réalisations.</a>
+                  </li>
+                  <li>
+                     <a href="#info" class="nav__link">À propos.</a>
+                  </li>
+                  <li>
+                     <a href="#services" class="nav__link">Services.</a>
+                  </li>
+                   <li>
+                     <a href="#contact" class="nav__link">Me contacter.</a>
+                  </li>
+               </ul>
+
+               <div class="nav__close" id="nav-close">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+               </div>
+
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            </div>
+
+
+         </nav>
+      </header>
+      
+      <!--==================== MAIN ====================-->
+      <main class="main">
+         <!--==================== HOME ====================-->
+         <section class="home section" id="home">
+            <div class="home__container container grid">
+               <img src="./assets/img/img_acceuil.png" alt="" class="home__img">
+
+               <div class="home__data">
+                  <h1 class="home__name">ADJ. Darill </h1>
+                  <h3 class="home__profession">Étudiant en Systèmes Informatiques et Logiciels</h3>
+               </div>
+
+               <a href="#work" class="home__scroll">
+                  <div class="home__scroll-box">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline></svg>
+                  </div>
+
+                  <span class="home__scroll-text">Mes Réalisations</span>
+
+               </a>
+
+            </div>
+         </section>
+
+         <!--==================== WORKS ====================-->
+         <section class="work section" id="work">
+            <h2 class="section__title">RÉCENTES RÉALISATIONS.</h2>
+
+            <div class="work__container container grid">
+               <article class="work__card">
+                  <a href="#" target="_blank" class="work__link">
+                     <h2 class="work__title">e-SAFE</h2>
+                     <p class="work__description">
+                        Votre application bureau qui bloque l'accès des intrus à vos fichiers personnels 
+                        et qui chiffre le contenu de tous vos fichiers avec des algorithmes aussi puissants que 
+                        l'AES 256. Pour une sécurité totale de vos fichiers...choisissez e-SAFE !
+                     </p>
+                     <img src="./assets/img/work-1.jpg" alt="image" class="work__img">
+                     <span class="svg_text">Découvrir </span>
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                  </a>
+               </article>
+               <article class="work__card">
+                  <a href="#" target="_blank" class="work__link">
+                     <h2 class="work__title">EtuNotes</h2>
+                     <p class="work__description">
+                        L'application de gestion de notes d'étudiants qui vous simplifie la vie ! Enregistrez vos 
+                        étudiants, leurs notes, leurs matières et obtenez automatiquement des bulletins collectifs et individuels 
+                        prêts à être imprimés en tenant compte des coefficients de chaque matières avec les calculs de moyennes 
+                        ainsi que les classements de mérite ...
+                     </p>
+                     <img src="./assets/img/work2.png" alt="image" class="work__img">
+                     <span class="svg_text">Découvrir </span>
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                  </a>
+               </article>
+               <article class="work__card">
+                  <a href="#" target="_blank" class="work__link">
+                     <h2 class="work__title">FSPORT-PL.com</h2>
+                     <p class="work__description">
+                        Avec votre site e-commerce, proposez des articles de sports modernes au grand public
+                        avec des fonctionnalités de filtrage par couleurs, tailles ou prix ...
+                     </p>
+                     <img src="./assets/img/work-3.jpg" alt="image" class="work__img">
+                     <span class="svg_text">Découvrir </span>
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                  </a>
+               </article>
+               <article class="work__card">
+                  <a href="#" target="_blank" class="work__link">
+                     <h2 class="work__title">Noahflix.com</h2>
+                     <p class="work__description">
+                        Lancez votre chaîne de streaming en publiant vos films et séries sur Noahflix 
+                        pour le plaisir de vos auditeurs ! ...   
+                     </p>
+                     <img src="./assets/img/work-2.jpg" alt="image" class="work__img">
+                     <span class="svg_text">Découvrir </span>
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                  </a>
+               </article>
+               <article class="work__card">
+                  <a href="#" target="_blank" class="work__link">
+                     <h2 class="work__title">Shooter Game</h2>
+                     <p class="work__description">
+                        Avec votre avatar, profitez de parties de jeux remplies d'actions en tuant des monstres et en évitant des pluies 
+                        de comètes tout en gagnant des points d'expériences ! ...
+                     </p>
+                     <img src="./assets/img/work-4.jpg" alt="image" class="work__img">
+                     <span class="svg_text">Découvrir </span>
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                  </a>
+               </article>
+            </div>
+
+         </section>
+
+         <!--==================== INFO ====================-->
+         <section class="info section" id="info">
+            <h2 class="section__title">A PROPOS.</h2>
+
+            <div class="info__container container grid">
+               <div class="about grid">
+                  <div class="about__content">
+                     <h3 class="info__title">À propos de moi.</h3>
+                     <p class="about__description">
+                        Au cours de mes formations, j’ai acquis de solides bases en <strong>programmation orientée objet</strong> ainsi qu’en développement d’<strong>applications web et mobile, interactives et dynamiques </strong>. Au-delà de mon grand intérêt pour l’informatique, pour moi, le plus important reste de pouvoir <strong>identifier un problème</strong>, de l’analyser, de penser une <strong>solution</strong> et de la mettre en œuvre en donnant vie à un <strong>outil numérique</strong> depuis son clavier. Je recherche donc constemment à mettre mes connaissances au service de projets concrets tout en continuant de forger ces connaissances en véritables compétences au contact du terrain.
+                     </p>
+                     <a href="./assets/pdf/CV_Darill_ADJIWANOU.pdf" download="" target="_blank" class="button about__button">
+                        Télécharger mon CV.
+                     </a>
+                  </div>
+                  <img class="about__img" src="./assets/img/man_design_working.svg" alt="">
+               </div>
+               <div class="skills">
+                  <h3 class="info__title">Compétences.</h3>
+
+                  <div class="skills__content grid">
+
+                     <div class="skills__box">
+                        <img src="./assets/img/python.svg" alt="" class="skills__img">
+                        <span class="skills__name">Python</span>
+                     </div>
+
+                     <div class="skills__box">
+                        <img src="./assets/img/c++.svg" alt="" class="skills__img">
+                        <span class="skills__name">C++</span>
+                     </div>
+
+                     <div class="skills__box">
+                        <img src="./assets/img/java.svg" alt="" class="skills__img">
+                        <span class="skills__name">Java</span>
+                     </div>
+
+                     <div class="skills__box">
+                        <img src="./assets/img/info-javascript.svg" alt="" class="skills__img">
+                        <span class="skills__name">JavaScript</span>
+                     </div>
+
+                     <div class="skills__box">
+                        <img src="./assets/img/php.svg" alt="" class="skills__img">
+                        <span class="skills__name">PHP</span>
+                     </div>
+
+                     <div class="skills__box">
+                        <img src="./assets/img/info-html.svg" alt="" class="skills__img">
+                        <span class="skills__name">HTML</span>
+                     </div>
+                     
+                     <div class="skills__box">
+                        <img src="./assets/img/info-css.svg" alt="" class="skills__img">
+                        <span class="skills__name">CSS</span>
+                     </div>
+
+                     <div class="skills__box">
+                        <img src="./assets/img/info-tailwind-css.svg" alt="" class="skills__img">
+                        <span class="skills__name">Tailwind CSS</span>
+                     </div>
+
+                     <div class="skills__box">
+                        <img src="./assets/img/wordpres.svg" alt="" class="skills__img">
+                        <span class="skills__name">WordPress</span>
+                     </div>
+                     
+                     <div class="skills__box">
+                        <img src="./assets/img/info-github.svg" alt="" class="skills__img">
+                        <span class="skills__name">GitHub</span>
+                     </div>
+
+                     <div class="skills__box">
+                        <img src="./assets/img/info-git.svg" alt="" class="skills__img">
+                        <span class="skills__name">Git</span>
+                     </div>
+
+                      <div class="skills__box">
+                        <img src="./assets/img/flutter.svg" alt="" class="skills__img">
+                        <span class="skills__name">Flutter</span>
+                     </div>
+                     
+                     <div class="skills__box">
+                        <img src="./assets/img/info-figma.svg" alt="" class="skills__img">
+                        <span class="skills__name">Figma</span>
+                     </div>   
+                     
+                     <div class="skills__box">
+                        <img src="./assets/img/ps.svg" alt="" class="skills__img">
+                        <span class="skills__name">Photoshop</span>
+                     </div>   
+                     
+                  </div>
+
+               </div>
+
+            </div>
+         </section>
+
+         <!--==================== SERVICES ====================-->
+         <section class="services section" id="services">
+            <h2 class="section__title">SERVICES.</h2>
+
+            <div class="services__container container grid">
+               <article class="services__card">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="services__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-code"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                  <h3 class="services__title">Développement Web</h3>
+                  <p class="services__description">
+                     A l'aide de technologies de conception web telles que l'HTML, le CSS et le JS je conçois des sites Web interactifs et dynamiques adoptant le plus possible un style moderne.
+                     Mes projets sont réalisés dans la limite de temps la plus courte et avec le plus grand soin grâce à un bon séquencement du projet en étapes permettant ainsi
+                     au maître d'ouvrage un suivi continu de sa commande. 
+                  </p>
+               </article>
+                <article class="services__card">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="services__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-figma"><path d="M5 5.5A3.5 3.5 0 0 1 8.5 2H12v7H8.5A3.5 3.5 0 0 1 5 5.5z"></path><path d="M12 2h3.5a3.5 3.5 0 1 1 0 7H12V2z"></path><path d="M12 12.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 1 1-7 0z"></path><path d="M5 19.5A3.5 3.5 0 0 1 8.5 16H12v3.5a3.5 3.5 0 1 1-7 0z"></path><path d="M5 12.5A3.5 3.5 0 0 1 8.5 9H12v7H8.5A3.5 3.5 0 0 1 5 12.5z"></path></svg>
+                  <h3 class="services__title">Design UI/UX</h3>
+                  <p class="services__description">
+                     Sentez vous le besoin de concevoir des maquettes de sites web, des flyers, des affiches publicitaires, des cartes de visite, des cartes d'invitation, ou même des montages vidéos?
+                        Grâce à la maitrise des meilleurs progiciels de montages images, videos et maquettes tels que Photoshop, Premiere Pro, Figma ou Balsamic...
+                        vous me ferais un immense honneur en me permettant de vous concevoir tout ce qui vous passe par la tête!
+                  </p>
+               </article>
+                <article class="services__card">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="services__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-target"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+                  <h3 class="services__title">Applications bureau/Jeux vidéos</h3>
+                  <p class="services__description">
+                     Souhaitez vous avoir une application personnalisée qui répond à un ou plusieurs besoins que vous avez identifié ? Grâce à mes connaissances variées en langages de programmation,
+                     je vous concoit une application interactive, répondant exactement à vos attentes. Êtes vous plutôt intéressé par des jeux vidéos ? J'exploiterais les meilleures techologies actuelles 
+                     (Unity, Blender ou encore Unreal Ungine...) sans parler des langages incontournables (C++, Python) pour vous offrir une immersion agréable et envoûtante...
+                  </p>
+               </article>
+                <article class="services__card">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="services__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-command"><path d="M18 3a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3H6a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3V6a3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3h12a3 3 0 0 0 3-3 3 3 0 0 0-3-3z"></path></svg>
+                  <h3 class="services__title">Développement Mobile</h3>
+                  <p class="services__description">
+                     Grâce aux récentes avancées dans le domaine du mobile, les frameworks tels que Flutter me permettent de concevoir vos applications mobiles
+                     des plus simples aux plus complexes aliant modernité, dynamisme, facilité d'utilisation et ceci dans les plus courts délais...
+                  </p>
+               </article>
+            </div>
+
+         </section>
+
+         <!--==================== CONTACT ====================-->
+         <section class="contact section" id="contact">
+            <h2 class="section__title">ME CONTACTER.</h2>
+
+            <div class="contact__container container grid">
+               <form action="" class="contact__form grid" id="contact-form">
+                  <div class="contact__group grid">
+                     <input type="text" name="user_name" placeholder="Nom" required class="contact__input">
+                     <input type="email" name="user_email" placeholder="E-mail" required class="contact__input">
+                  </div>
+
+                  <textarea name="user_message" placeholder="Message" required class="contact__input contact__area"></textarea>
+
+                  <button type="submit" class="button contact__button">E N V O Y E R .</button>
+                  <p class="contact__message" id="contact_message">
+
+                  </p>
+
+               </form>
+
+               <div class="contact__social grid">
+                  <a href="" target="_blank" class="contact__social-link">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                     <span> . </span>
+                  </a>
+                  <a href="" target="_blank" class="contact__social-link">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                     <span> . </span>
+                  </a>
+                  <a href="" target="_blank" class="contact__social-link">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                     <span> . </span>
+                  </a>
+               </div>
+
+
+            </div>
+
+         </section>
+      </main>
+
+      <!--==================== FOOTER ====================-->
+      <footer class="footer">
+         <div class="footer__container container grid">
+            <ul class="footer__links">
+               <li>
+                  <a href="#home" class="footer__link">Acceuil.</a>
+               </li>
+               <li>
+                  <a href="#work" class="footer__link">Réalisations.</a>
+               </li>
+               <li>
+                  <a href="#info" class="footer__link">À propos.</a>
+               </li>
+            </ul>
+
+            <span class="footer__copy">
+               &reg; | Tous droits réservés par A. Darill
+            </span>
+
+         </div>
+      </footer>
+
+      <!--========== SCROLL UP ==========-->
+      <a href="#home" class="scrollup" id="scroll-up">
+         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+      </a>
+
+      <!--=============== SCROLLREVEAL ===============-->
+      <script src="./assets/js/scrollreveal.min.js"></script>
+
+      <!--=============== EMAIL JS ===============-->
+      <script 
+         type="text/javascript"
+         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+      </script>
+
+      <!--=============== MAIN JS ===============-->
+      <script src="./assets/js/main.js"></script>
+   </body>
 </html>
